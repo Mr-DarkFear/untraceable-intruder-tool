@@ -18,7 +18,7 @@ class color_controler():
         ['ID', 'network adapters', 'BSSID', 'WIFI', 'MAC', 'IP', 'STOPPED', "credit", "help", "show_MAC", "show_IP", 'MAC_spoofing', "IP_spoofing", 'wifi_cracking', 'name_spoofing', 'end', 'exit', 'stop', 'back', 'clear', 'start', 'menu'],
         ["╟", "╢"],
         [],
-        ["Mr_DarkFear (Lê Nguyễn Gia Bảo)", "─", "│", "┘", "└", "┌", "┐", "╭", "╮", "╰", "╯", "┬", "┝"]
+        ["Mr_DarkFear", "─", "│", "┘", "└", "┌", "┐", "╭", "╮", "╰", "╯", "┬", "┝"]
         ]
         result = text
         for i in patern:
