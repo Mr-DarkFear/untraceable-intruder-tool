@@ -46,7 +46,7 @@ title = """
 credit = f"""
  ╔══════════════════[ credit ]══════════════════╗
 ╔╝                                              ╚╗
-╬   created by: Mr_DarkFear (Lê Nguyễn Gia Bảo)  ╬
+╬   created by: Mr_DarkFear                      ╬
 ╬   github:https://github.com/Mr-DarkFear        ╬
 ╚╗                                              ╔╝
  ╚══════════════════════════════════════════════╝
