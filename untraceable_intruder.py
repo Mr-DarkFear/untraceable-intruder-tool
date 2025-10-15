@@ -49,7 +49,6 @@ class SimpleLogger:
         timestamp = self._get_timestamp()
         log_entry = f"[{timestamp}] [{level}] {message}\n"
         
-        # In ra console với màu sắc
         if level == "ERROR":
             print(f"\033[91m{log_entry}\033[0m", end="")
         elif level == "SUCCESS":
@@ -58,8 +57,7 @@ class SimpleLogger:
             print(f"\033[93m{log_entry}\033[0m", end="")
         else:
             print(log_entry, end="")
-        
-        # Ghi vào file
+
         with open(self.log_file, 'a', encoding='utf-8') as f:
             f.write(log_entry)
     
@@ -75,7 +73,6 @@ class SimpleLogger:
         """Log các sự kiện bảo mật quan trọng"""
         self.log(f"SECURITY EVENT: {event}", "SECURITY")
 
-# Khởi tạo logger toàn cục
 logger = SimpleLogger()
 
 # ==================== MODIFIED FUNCTIONS ====================
@@ -198,16 +195,14 @@ def MAC_spoofing():
             clear_old_fake()
             show_mac()
             
-            # Cho phép nhập lại GUID nếu sai
             while True:
                 GUID = better_input('Enter MAC GUID to fake (or "back" to return): ')
                 if GUID in ('end', 'stop', 'back', 'menu'):
                     return
                 
                 if check_if_valid_GUID(GUID):
-                    break  # GUID hợp lệ, thoát vòng lặp
+                    break 
                 else:
-                    # Hiển thị lại danh sách MAC để user dễ chọn
                     print_with_color("Available GUIDs:")
                     for adapter in all_MAC:
                         guid_display = adapter.get('InterfaceGuid') or adapter.get('GUID') or adapter.get('NetCfgInstanceId', 'N/A')

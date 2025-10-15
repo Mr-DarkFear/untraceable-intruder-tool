@@ -32,11 +32,10 @@ def reset_mac(target_guid):
                                     found = True
                                 break
                         except FileNotFoundError:
-                            # Bỏ qua nếu không có NetCfgInstanceId
                             continue
                 except WindowsError as e:
                     if e.winerror == 259:  # No more data is available
-                        break  # Thoát vòng lặp khi hết subkey
+                        break
                     else:
                         print(f"WindowsError: {e}")
                         continue
@@ -64,7 +63,6 @@ def get_all_mac():
         if isinstance(adapters, dict):
             adapters = [adapters]
         
-        # Đổi tên InterfaceGuid thành GUID để tương thích với code cũ
         for adapter in adapters:
             if 'InterfaceGuid' in adapter:
                 adapter['GUID'] = adapter['InterfaceGuid']
