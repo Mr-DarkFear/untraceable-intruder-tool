@@ -450,8 +450,6 @@ def show_log():
 def main():
     global all_MAC, all_IP
     
-    print(f'\033[91m{GUI.title}\033[0m')
-    print_with_color(GUI.credit)
     print_with_color(GUI.warning[0])
     
     # Log tool startup
@@ -545,4 +543,7 @@ def main():
             logger.log(error_msg, "ERROR")
 
 if __name__ == '__main__':
+    print(f'\033[91m{GUI.title}\033[0m')
+    print_with_color(GUI.credit)
+    input("[Press Enter]")
     main()

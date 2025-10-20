@@ -8,8 +8,6 @@ A comprehensive network security testing toolkit designed for educational purpos
 ![Windows](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-![Tool Screenshot](./IMG/untraceable_intruder.png)
-
 ## ⚠️ IMPORTANT DISCLAIMER
 
 **THIS TOOL IS FOR EDUCATIONAL AND AUTHORIZED TESTING PURPOSES ONLY**
